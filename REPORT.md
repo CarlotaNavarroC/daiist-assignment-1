@@ -66,7 +66,7 @@ Model: logistic regression, since the target is binary (Dropout vs. Not-Dropout)
 | Naive baseline (majority class) | 0.679 | 0.000 | 0.000 | 0.000 |
 | scikit-learn | 0.841 | 0.799 | 0.673 | 0.730 |
 | Manual PyTorch loop | 0.840 | 0.803 | 0.662 | 0.726 |
-| Standard PyTorch (nn.Module + optim) | 0.836 | 0.801 | 0.651 | 0.718 |
+| Standard PyTorch (nn.Module + optim) | 0.838 | 0.808 | 0.651 | 0.721 |
 
 All three trained methods outperform the naive baseline, which by definition catches zero actual dropouts (0% recall) confirming the models are learning and not just exploiting class imbalance.
 
